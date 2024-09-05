@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	int n,q,cube,num=0,i;
+	printf("enter any number");
+	scanf("%d",&n);
+	i=n;
+	while(n!=0)
+	{
+	q=n%10;
+	cube=q*q*q;
+	num=num+cube;
+	n=n/10;
+	}
+if(i==num)
+printf("it is an armstrong number");
+else
+printf("it is an armstrong number");
+}
