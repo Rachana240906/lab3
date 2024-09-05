@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int n,i=1,t;
+	printf("enter a number");
+	scanf("%d",&n);
+	while(i<=10)
+	{
+	t=i*n;
+	printf("\n%d*%d=%d",n,i,t);
+	i=i+1;
+	}
+	
+}
