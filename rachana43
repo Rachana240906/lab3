@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+	int sales,n;
+	float commision;
+	printf("enter the sales amount");
+	scanf("%d",&sales);
+	if(sales<=500)
+	n=1;
+	else if(sales>500 && sales<=2000)
+	n=2;
+	else if(sales>2000 && sales<=5000)
+	n=3;
+	else if(sales>5000)
+	n=4;
+	switch(n)
+	{
+	case 1:commision=(5*sales)/100;
+	   printf("the commision is rs.%f",commision);
+	   break;
+	case 2:commision=35+((10*sales)/100);
+	  printf("the commision is rs.%f",commision);
+	  break;
+	case 3:commision=185+((12*sales)/100);
+	   printf("the commision is rs.%f",commision);
+	   break;
+	case 4:commision=(12.5*sales)/100;
+	   printf("the commision is rs.%f",commision);
+	   break;
+}
+}
