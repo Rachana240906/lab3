@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	int q1,n,q2,sum1=0,sum2=0;
+	printf("enter the number");
+	scanf("%d",&n);
+	while(n!=0)
+	{
+		q1=n%10;
+		sum1=sum1+q1;
+		n=n/10;
+	}
+	if(sum1>0 && sum1<=9)
+	printf("the sum of digits is %d",sum1);
+	else
+	while(sum1>9)
+	{
+	q2=sum1%10;
+	sum2=sum2+q2;
+	sum1=sum1/10;
+	}
+	printf("the sum of digits is %d",sum2+sum1);
+}
